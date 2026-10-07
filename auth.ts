@@ -14,6 +14,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       checks: ["pkce", "state"],
 
       authorization: {
+        url: "https://accounts.spotify.com/authorize",
         params: {
           scope: [
             "playlist-read-private",
